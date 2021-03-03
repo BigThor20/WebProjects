@@ -1,0 +1,222 @@
+var index=0;
+
+rightButtonAssignments.addEventListener('click', function(){
+	event.preventDefault();
+   assignmentsGroupCol1.innerHTML='';
+
+   for(var i in sliders.secondSlider[index]){
+        if( i !== "sliderBackground" ){
+        	var elementDiv = document.createElement('div');
+        	var elementPart1 = document.createElement('div');
+        	var elementPart2 = document.createElement('div');
+        	var firstP = document.createElement('p');
+        	var secondP = document.createElement('p');
+        	elementDiv.className = 'element';
+        	elementPart1.className = 'part1';
+        	elementPart2.className = 'part2';
+        	firstP.appendChild(document.createTextNode(i));
+        	secondP.appendChild(document.createTextNode(sliders.secondSlider[index][i]));
+        	elementPart1.appendChild(firstP);
+        	elementPart2.appendChild(secondP);
+        	elementDiv.appendChild(elementPart1);
+        	elementDiv.appendChild(elementPart2);
+        	assignmentsGroupCol1.appendChild(elementDiv);
+   } 
+   else
+   	assignmentsContainer.style.backgroundColor = sliders.secondSlider[index][i];
+   	}  	  	
+});
+
+rightButtonAssignments.addEventListener('click', function(){
+	event.preventDefault();
+   assignmentsGroupCol2.innerHTML='';
+
+   for(var i in sliders.secondSlider[index]){
+        if( i !== "sliderBackground" ){
+        	var elementDiv = document.createElement('div');
+        	var elementPart1 = document.createElement('div');
+        	var elementPart2 = document.createElement('div');
+        	var firstP = document.createElement('p');
+        	var secondP = document.createElement('p');
+        	elementDiv.className = 'element';
+        	elementPart1.className = 'part1';
+        	elementPart2.className = 'part2';
+        	firstP.appendChild(document.createTextNode(i));
+        	secondP.appendChild(document.createTextNode(sliders.secondSlider[index][i]));
+        	elementPart1.appendChild(firstP);
+        	elementPart2.appendChild(secondP);
+        	elementDiv.appendChild(elementPart1);
+        	elementDiv.appendChild(elementPart2);
+        	assignmentsGroupCol2.appendChild(elementDiv);
+   } 
+   else
+   	assignmentsContainer.style.backgroundColor = sliders.secondSlider[index][i];
+   	}
+   	index++;
+   	if(index === sliders.mainSlider.length){
+		index = 0;
+	}
+	if (index < 0) {
+		index = sliders.mainSlider.length - 1;
+	}
+ 	  	
+});
+
+
+var leftButtonAssignments = document.querySelector(".assignments .direction-left");
+
+leftButtonAssignments.addEventListener('click', function(){
+	event.preventDefault();
+	assignmentsGroupCol2.innerHTML='';
+		index--;
+   	if(index === sliders.mainSlider.length){
+		index = 0;
+	}
+	if (index < 0) {
+		index = sliders.mainSlider.length - 1;
+	}
+	for(var i in sliders.secondSlider[index]){
+		if( i !== "sliderBackground"){
+			var elementDiv = document.createElement('div');
+			var elementPart1 = document.createElement('div');
+			var elementPart2 = document.createElement('div');
+			var firstP = document.createElement('p');
+			var secondP = document.createElement('p');
+			elementDiv.className = "element";
+			elementPart1.className = "part1";
+			elementPart2.className = "part2";
+			firstP.appendChild(document.createTextNode(i));
+			secondP.appendChild(document.createTextNode(sliders.secondSlider[index][i]));
+			elementPart1.appendChild(firstP);
+			elementPart2.appendChild(secondP);
+			elementDiv.appendChild(elementPart1);
+			elementDiv.appendChild(elementPart2);
+			assignmentsGroupCol2.appendChild(elementDiv);
+		}
+		else
+			assignmentsContainer.style.backgroundColor = sliders.secondSlider[index][i];
+	}
+});
+
+
+var sliders = {
+    "mainSlider": [
+        {
+            imageUrl: 'https://dummyimage.com/3840%20x%202160/196109/196109',
+            texts: {
+                heading: "WE ARE SATIGO 1",
+                statement: "1 LEADERS IN TEHNOLOGY RECRUITMENT",
+                finalStatement: "Unrivalled industry expertise and world class service",
+                button1: {
+                    text: 'OUR EXPERTISE',
+                    target: '_blank',
+                    url: 'www.google.com'
+                },
+                button2: {
+                    text: 'BROWSE JOBS',
+                    target: '_blank',
+                    url: 'www.google.com'
+                }
+            }
+        }, {
+            imageUrl: 'https://dummyimage.com/3840%20x%202160/0d0b78/0d0b78',
+            texts: {
+                heading: "WE ARE SATIGO 2",
+                statement: "2 LEADERS IN TEHNOLOGY RECRUITMENT",
+                finalStatement: "Unrivalled industry expertise and world class service",
+                button1: {
+                    text: 'OUR EXPERTISE',
+                    target: '_blank',
+                    url: 'www.google.com'
+                },
+                button2: {
+                    text: 'BROWSE JOBS',
+                    target: '_blank',
+                    url: 'www.google.com'
+                }
+            }
+        }, {
+            imageUrl: 'https://dummyimage.com/3000%20x%202160/c29c04/c29c04',
+            texts: {
+                heading: "WE ARE SATIGO 3",
+                statement: "3 LEADERS IN TEHNOLOGY RECRUITMENT",
+                finalStatement: "Unrivalled industry expertise and world class service",
+                button1: {
+                    text: 'OUR EXPERTISE',
+                    target: '_blank',
+                    url: 'www.google.com'
+                },
+                button2: {
+                    text: 'BROWSE JOBS',
+                    target: '_blank',
+                    url: 'www.google.com'
+                }
+            }
+        }, {
+            imageUrl: 'https://dummyimage.com/3840%20x%202160/c40602/c40602',
+            texts: {
+                heading: "WE ARE SATIGO 4",
+                statement: "4 LEADERS IN TEHNOLOGY RECRUITMENT",
+                finalStatement: "Unrivalled industry expertise and world class service",
+                button1: {
+                    text: 'OUR EXPERTISE',
+                    target: '_blank',
+                    url: 'www.google.com'
+                },
+                button2: {
+                    text: 'BROWSE JOBS',
+                    target: '_blank',
+                    url: 'www.google.com'
+                }
+            }
+        }
+    ],
+    "secondSlider": [
+        {
+            'sliderBackground': '#53bfcc',
+            "Practice": "1",
+            "Requirement": "22222222 Rapid ramp up in sales recruiment drive x7 enterprise sales hires to support internal recruiment team to achieve capacity and hit revenue targets by delivering big ticket sales profiles as required by the management team",
+            "Solution": "1",
+            "Delivery": "1",
+            "Practice1": "22222222 Complex hosting programme requiring interim change resource to lead the turnarbund programme and regain stakeholder confidence",
+            "Requirement1": "1",
+            "Delivery1": "22222222222222222 rovided executive layer interim management andimplementation of a portofolio of IP convergene and hosting programmers by placing and experienced transformation manager focussed on governance and full programme recovery",
+        }, {
+            'sliderBackground': '#3cbac9',
+            "Practice": "2 Enterprise Sales",
+            "Requirement": "1 Rapid ramp up in sales recruiment drive x7 enterprise sales hires to support internal recruiment team to achieve capacity and hit revenue targets by delivering big ticket sales profiles as required by the management team",
+            "Solution": "1 Permanent",
+            "Delivery": "1 Change & Transformation",
+            "Practice1": "1 Complex hosting programme requiring interim change resource to lead the turnarbund programme and regain stakeholder confidence",
+            "Requirement1": "1 Contract",
+            "Delivery1": "1 Provided executive layer interim management andimplementation of a portofolio of IP convergene and hosting programmers by placing and experienced transformation manager focussed on governance and full programme recovery",
+        }, {
+            'sliderBackground': '#2ba6b5',
+            "Practice": "3 Enterprise Sales",
+            "Requirement": "2 Rapid ramp up in sales recruiment drive x7 enterprise sales hires to support internal recruiment team to achieve capacity and hit revenue targets by delivering big ticket sales profiles as required by the management team",
+            "Solution": "2 Permanent",
+            "Delivery": "2 Change & Transformation",
+            "Practice1": "2 Complex hosting programme requiring interim change resource to lead the turnarbund programme and regain stakeholder confidence",
+            "Requirement1": "2 Contract",
+            "Delivery1": "2 Provided executive layer interim management andimplementation of a portofolio of IP convergene and hosting programmers by placing and experienced transformation manager focussed on governance and full programme recovery",
+        }, {
+            'sliderBackground': '#1598a8',
+            "Practice": "4 Enterprise Sales",
+            "Requirement": "2 Rapid ramp up in sales recruiment drive x7 enterprise sales hires to support internal recruiment team to achieve capacity and hit revenue targets by delivering big ticket sales profiles as required by the management team",
+            "Solution": "2 Permanent",
+            "Delivery": "2 Change & Transformation",
+            "Practice1": "2 Complex hosting programme requiring interim change resource to lead the turnarbund programme and regain stakeholder confidence",
+            "Requirement1": "2 Contract",
+            "Delivery1": "2 Provided executive layer interim management andimplementation of a portofolio of IP convergene and hosting programmers by placing and experienced transformation manager focussed on governance and full programme recovery",
+        }, {
+            'sliderBackground': '#118eaa',//yellow
+            "Practice": "5 Enterprise Sales",
+            "Requirement": "2 Rapid ramp up in sales recruiment drive x7 enterprise sales hires to support internal recruiment team to achieve capacity and hit revenue targets by delivering big ticket sales profiles as required by the management team",
+            "Solution": "2 Permanent",
+            "Delivery": "2 Change & Transformation",
+            "Practice1": "2 Complex hosting programme requiring interim change resource to lead the turnarbund programme and regain stakeholder confidence",
+            "Requirement1": "2 Contract",
+            "Delivery1": "2 Provided executive layer interim management andimplementation of a portofolio of IP convergene and hosting programmers by placing and experienced transformation manager focussed on governance and full programme recovery",
+        }
+    ]
+};
