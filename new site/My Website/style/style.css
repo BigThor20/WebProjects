@@ -1,0 +1,1366 @@
+body{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+*{
+	box-sizing: border-box;
+}
+.inside {
+	width: 100%;
+	height: auto;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	height: auto;
+	padding:10px;
+	margin: 0;
+	background: #111;
+	position: fixed;
+	z-index: 9999;
+}
+header nav.stroke{
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	padding:  0;
+	background: #111;
+	font-size: 1.35em;
+	z-index: 99999;
+}
+nav.stroke ul{
+	list-style: none;
+	float: right;
+	width: auto;
+	padding: 0;
+	margin: 0;
+	height: auto;
+}
+nav.stroke ul li{
+	float: left;
+	padding:6px 12px;
+}
+nav.stroke ul li a{
+	color: #e0dbdb;
+	text-decoration: none;
+	font-style: italic;
+	padding: 7px;
+}
+nav.stroke ul li a:hover{
+	color: #fff;
+}
+nav.stroke ul li a.active{
+	color:#fff;
+}
+nav.stroke ul li a,
+nav.stroke ul li a:after,
+nav.stroke ul li a:before {
+  transition: all .5s;
+}
+nav.stroke ul li a{
+  position: relative;
+}
+nav.stroke ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #e0dbdb;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+nav .logo{
+	width: 40px;
+	height: 30px;
+	float: left;
+}
+nav .logo img{
+	width: 100%;
+	height: auto;
+}
+header nav.mobile{
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	padding:  0;
+	background: #fff;
+	font-size: 1.35em;
+	z-index: 99999;
+}
+header nav.mobile .side{
+	float: right;
+	margin: 0;
+	background: #111;
+	width: 40px;
+	height: 40px;
+	border-bottom-left-radius: 3.2px;
+}
+nav.mobile .side img{
+	width: 40px;
+	height: auto;
+}
+nav.mobile .name{
+	float: left;
+}
+nav.mobile .name h2{
+	font-size: 30px;
+	font-family: 'Apple Chancery', cursive;
+	text-align: center;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+main{
+	margin-top: 58px;
+	width: 100%;
+	display: inline-block;
+	height: auto;
+	background: white;
+	margin-bottom: 0;
+}
+main .cover{
+	width: 100%;
+	height: 370px;
+	background: #333030;
+	display: inline-block;
+	overflow: hidden;
+}
+.cover .inside{
+	position: relative;
+}
+.cover .cover-info{
+	width: 60%;
+	min-width: 350px;
+	float: right;
+	right: 0;
+	top:42px;
+	position: absolute;
+}
+.cover-info h2{
+	font-size: 36px;
+	font-weight: 500;
+	text-align: center;
+	color: #fff;
+}
+.cover-info p{
+	font-size: 19.5px;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+}
+.cover-info .circles-container{
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 50px;
+	height: 12px;
+	
+}
+.circles-container .circle{
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background: #d3d3d3;
+	transition: 0.5s ease;
+	float: left;
+}
+.first-circle{
+	margin:0 10px 0 15px;
+}
+.second-circle{
+	margin: 0 10px;
+}
+.third-circle{
+	margin:0 15px 0 10px;
+}
+.circle:hover{
+	background: #fff;
+	cursor: pointer;
+}
+.cover .image-cover{
+	width: 40%;
+	min-width: 350px;
+	float: left;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+.image-cover img{
+	width: 225px;
+	height: auto;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+main .motto{
+	width: 100%;
+	height: auto;
+	background: white;
+}
+.motto p{
+	color: black;
+	font-weight: 300;
+	font-size: 1.4rem;
+	text-align: center;
+	padding-bottom: 20px;
+	font-family: 'Apple Chancery', cursive;
+}
+.motto h3{
+	font-size: 15.5px;
+	font-weight: 300;
+	text-align: left;
+	margin-left: 10px;
+	font-style: oblique;
+	padding-top: 20px;
+}
+.arrow_box{
+	position: relative;
+	background: #fff;
+}
+.arrow_box:after {
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    margin-top: 15px;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(81, 78, 78, 0);
+    border-top-color: #fff;
+    border-width: 20px;
+    margin-left: -2 0px;
+}
+main .descriere{
+	width: 100%;
+	height: auto;
+	background-image: url("../images/background1.jpg");
+	display: inline-block;
+	padding: 20px 0;
+}
+.descriere .element{
+	width: 100%;;
+	height: auto;
+	display: inline-block;
+}
+.element .image{
+	width: 50%;
+	margin: 0;
+	float: right;
+}
+.element .intrebare{
+	width: 50%;
+	margin: 0;
+	float: left;
+	color:#111;
+}
+.element .image img{
+	width: 200px;
+	height: auto;
+	margin-top: 30px;
+	margin-left: 100px;
+}
+.intrebare p{
+	text-align: center;
+	font-size:1.25rem;
+	text-indent: 25px;
+}
+.intrebare a{
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+	font-size: 1.28rem;
+	font-style: italic;
+}
+.intrebare h2{
+	font-weight: 600;
+	font-size: 1.72rem;
+	margin-left: 10px;
+	font-family: 'Apple Chancery', cursive;
+}
+.fixed{
+	position: relative;
+    overflow: hidden;
+    background-image: url(../images/fixed1.jpg);
+    width: 100%;
+    min-height: 435px;
+    height: auto;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fixed1{
+	position: relative;
+    overflow: hidden;
+    background-image: url(../images/fixed2.jpg);
+    width: 100%;
+    float: left;
+    min-height: 435px;
+    height: auto;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main .servicii{
+	width: 100%;
+	height: auto;
+	background: #333030;
+	display: inline-block;
+	padding-bottom: 2px;
+}
+
+.servicii h2.subtitle {
+	font-size: 1.85rem;
+	font-family: 'Apple Chancery', cursive;
+	font-weight: 500;
+	color: #fff;
+	text-align: center;
+	font-style: italic;
+
+}
+.servicii .element{
+	width: 28%;
+	height: 280px;
+	margin:15px 2%;
+	border-radius: 7.5px;
+	float: left;
+	background: #111;
+	color:#fff;
+}
+.servicii .first-element{
+	margin-left: 4%;
+}
+.servicii .last-element{
+	margin-right: 4%;
+}
+.element .first-container{
+	width: 100%;
+	height: auto;
+}
+.first-container .circle{
+	width: 115.5px;
+	height: 115.5px;
+	margin:13px auto;
+	padding-top: 22.5px;
+	border-radius: 50%;
+	background: #000;
+}
+.first-container .circle h2{
+	text-align: center;
+	font-size: 18.5px;
+}
+.element .second-container{
+	width: 100%;
+	height: auto;
+}
+.second-container p{
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+	width: 90%;
+	margin-left: 5%;
+}
+footer.desktop{
+	width: 100%;
+	display: inline-block;
+	height: auto;
+	margin:0;
+	margin-top: -1.5px;
+	background: #111;
+}
+footer.desktop .first-container{
+	width: 100%;
+	height: auto;
+	background: #111;
+}
+footer.desktop .first-container h2{
+	font-size: 1.75rem;
+	font-weight: 500;
+	color: #fff;
+}
+footer.desktop .first-container .container1{
+	width: 65%;
+	height: auto;
+	float: left;
+	padding-left: 5px;
+	position: relative;
+}
+footer.desktop .first-container .container2{
+	width: 35%;
+	height: auto;
+	padding: 20px 0;
+	float: left;
+	margin-top: 46px;
+}
+footer.desktop .first-container .container2 .element{
+	width: 80%;
+	height: 45px;
+	margin: 0 auto;
+	border-radius: 4px;
+	background: transparent;
+	transition: 1.5s ease;
+	color: #fff;
+	clear: both;
+	margin-bottom: 2px;
+}
+footer.desktop .first-container .container2 .element p{
+	margin-top: 13px;
+	margin-left: 3px;
+	float: left;
+}
+footer.desktop .first-container .container2 .element a{
+	text-decoration: none;
+	color: #fff;
+}
+footer.desktop .first-container .container2 .element img{
+	width: 45px;
+	height: 45px;
+	float: left;
+}
+footer.desktop .first-container .container2 .element:hover{
+	background: #000;
+}
+footer.desktop .first-container .container2 .element img.upwork-logo{
+	width: 43px;
+	height: 43px;
+	border-radius: 3px;
+}
+footer.desktop .first-container .container2 .element img.facebook-logo{
+	width: 43px;
+	height: 43px;
+}
+footer.mobile{
+	width: 100%;
+	height: auto;
+	padding: 2px;
+	background: #111;
+	margin-top: -1.5px;
+	display: inline-block;
+}
+footer.mobile h2{
+	font-size: 1.25rem;
+	color: #fff;
+	margin-left: 5px;
+}
+iframe{
+	width: 80%;
+	height: 250px;
+}
+.adresa{
+	position: absolute;
+	width: 60%;
+	background: rgba(17,17,17,0.65);
+	height: auto;
+	bottom: 15px;
+	left:15px;
+	color: #fff;
+	padding: 3px;
+	font-size: 1.15rem;
+	font-weight: 300;
+	transition: 0.5s ease-in;
+	border-radius: 2.5px;
+}
+.adresa:hover{
+	background: #111;
+}
+.final{
+	width: 100%;
+	font-size: 19.5px;
+	text-align: center;
+	height: auto;
+	padding: 8px 0;
+	color: #fff;
+	background: rgba(17,17,17,1);
+	display: inline-block;
+}
+main.cv{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	margin-top: 58px;
+	float: left;
+}
+main.cv .first-container{
+	width: 40%;
+	float: left;
+	height: auto;
+	background: #333030;
+	color: #fff;
+}
+main.cv .first-container .element{
+	width: 100%;
+	height: auto;
+	padding-bottom: 20px;
+}
+main.cv .profile-circle{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin: 0 auto;
+	background: #fff;
+	z-index: 1;
+	overflow-x: hidden;
+    overflow-y: hidden;
+}
+.profile-circle img{
+	width: 100%;
+	height: auto;
+	z-index: -1;
+}
+main.cv .element .title{
+	width: 100%;
+	height: auto;
+	background: #111;
+	color: #fff;
+}
+main.cv .element .title h2{
+	font-size: 1.2rem;
+	font-weight: 400;
+	padding: 3px 5px;
+}
+main.cv .element .descriere{
+	width: 90%;
+	height: auto;
+	margin: 0 5%;
+	background: transparent;
+	padding: 0;
+	color: #fff;
+}
+main.cv .element .descriere p.first{
+	font-size: 1rem;
+	text-indent: 5px;
+}
+main.cv .element .descriere p.second{
+	font-size: 0.9rem;
+	text-indent: 15px;
+}
+main.cv .element .procent{
+	width: 90%;
+	height: 10px;
+	border-radius:4.5px;
+	background: #111;
+}
+.element .procent .pro-100{
+	width: 100%;
+	height: 10px;
+	background: #fff;
+	border-radius: 4.5px;
+	position: relative;
+    -webkit-animation-name: pro-100; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: pro-100;
+    animation-duration: 5s;
+}
+.element .procent .pro-97{
+	width: 97%;
+	height: 10px;
+	background: #fff;
+	border-radius: 4.5px;
+	position: relative;
+   -webkit-animation-name: pro-97; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: pro-97;
+    animation-duration: 5s;
+}
+.element .procent .pro-95{
+	width: 95%;
+	height: 10px;
+	background: #fff;
+	border-radius: 4.5px;
+	position: relative;
+   -webkit-animation-name: pro-195; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: pro-95;
+    animation-duration: 5s;
+}
+.element .procent .pro-90{
+	width: 90%;
+	height: 10px;
+	background: #fff;
+	border-radius: 4.5px;
+	position: relative;
+    -webkit-animation-name: pro-90; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: pro-90;
+    animation-duration: 5s;
+}
+.element .procent .pro-86{
+	width: 86%;
+	height: 10px;
+	background: #fff;
+	border-radius: 4.5px;
+	position: relative;
+    -webkit-animation-name: pro-86; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: pro-86;
+    animation-duration: 5s;
+}
+.element .procent .pro-80{
+	width: 80%;
+	height: 10px;
+	background: #fff;
+	border-radius: 4.5px;
+	position: relative;
+    -webkit-animation-name: pro-80; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: pro-80;
+    animation-duration: 5s;
+}
+.element .procent .pro-60{
+	width: 60%;
+	height: 10px;
+	background: #fff;
+	border-radius: 4.5px;
+	position: relative;
+    -webkit-animation-name: pro-60; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: pro-60;
+    animation-duration: 5s;
+}
+.element .procent .pro-40{
+	width: 40%;
+	height: 10px;
+	background: #fff;
+	border-radius: 4.5px;
+	position: relative;
+    -webkit-animation-name: pro-40; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: pro-40;
+    animation-duration: 5s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes pro-100 {
+    0%   {width: 0%;}
+    100% {width: 100%;}
+}
+/* Standard syntax */
+@keyframes pro-100 {
+    0%   {width: 0%;}
+    100% {width: 100%;}
+}
+@-webkit-keyframes pro-97 {
+    0%   {width: 0%;}
+    100% {width: 97%;}
+}
+/* Standard syntax */
+@keyframes pro-97 {
+    0%   {width: 0%;}
+    100% {width: 97%;}
+}
+@-webkit-keyframes pro-95{
+    0%   {width: 0%;}
+    100% {width: 95%;}
+}
+/* Standard syntax */
+@keyframes pro-95 {
+    0%   {width: 0%;}
+    100% {width: 95%;}
+}
+@-webkit-keyframes pro-90 {
+    0%   {width: 0%;}
+    100% {width: 90%;}
+}
+/* Standard syntax */
+@keyframes pro-90 {
+    0%   {width: 0%;}
+    100% {width: 90%;}
+}
+@-webkit-keyframes pro-86 {
+    0%   {width: 0%;}
+    100% {width: 86%;}
+}
+/* Standard syntax */
+@keyframes pro-86 {
+    0%   {width: 0%;}
+    100% {width: 86%;}
+}
+@-webkit-keyframes pro-80 {
+    0%   {width: 0%;}
+    100% {width: 80%;}
+}
+/* Standard syntax */
+@keyframes pro-80 {
+    0%   {width: 0%;}
+    100% {width: 80%;}
+}
+@-webkit-keyframes pro-60 {
+    0%   {width: 0%;}
+    100% {width: 60%;}
+}
+/* Standard syntax */
+@keyframes pro-60 {
+    0%   {width: 0%;}
+    100% {width: 60%;}
+}
+@-webkit-keyframes pro-40 {
+    0%   {width: 0%;}
+    100% {width: 40%;}
+}
+/* Standard syntax */
+@keyframes pro-40 {
+    0%   {width: 0%;}
+    100% {width: 40%;}
+}
+main.cv .second-container{
+	width: 60%;
+	float: left;
+	height: auto;
+	background: #fff;
+}
+main.cv .second-container .element1{
+	width: 100%;
+	height: auto;
+	padding: 0;
+	padding-bottom: 10px;
+	background: transparent;
+}
+main.cv .second-container .element1 h1.title{
+	font-size: 3.6rem;
+	color: #333030;
+	text-shadow: black 0.03em 0.05em 0.03em;
+	font-style: italic;
+	margin-left: 15px;
+	margin-bottom: 0;
+	background: transparent;
+	text-align: center;
+}
+main.cv .second-container .element1 h2.job{
+	font-size: 2.4rem;
+	color: #333030;
+	margin-top: 0;
+	text-shadow: black 0.03em 0.05em 0.03em;
+	font-style: italic;
+	margin-left: 35px;
+	text-align: center;
+}
+main.cv .second-container .element1 .title{
+	width: auto;
+	height: auto;
+}
+main.cv .second-container .element1 h2.title{
+	font-size: 1.55rem;
+	padding: 5px 10px;
+	color: #fff;
+	background: #333030;
+	width: auto;
+}
+main.cv .element1 .descriere{
+	width: 90%;
+	height: auto;
+	margin: 0 5%;
+	background: transparent;
+	padding: 0;
+	color: #111;
+}
+main.cv .element1 .descriere h2.studiu{
+	font-size: 1.32rem;
+	font-weight: 600;
+	color: #111;
+	margin-left: 5px;
+	margin-bottom: 6px;
+}
+main.cv .element1 .descriere p.first{
+	font-size: 1rem;
+	text-indent: 15px;
+	margin: 0;
+	margin-bottom: 4px;
+	width: auto;
+	color: #111;
+	text-align: left;
+
+}
+main.cv .element1 .descriere p.second{
+	font-size: 0.9rem;
+	text-indent: 30px;
+	margin: 0;
+	width: auto;
+	margin-bottom: 10px;
+	color: #111;
+	text-align: left;
+}
+body.blog{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background-image: url("../images/blog-wallpaper.jpg") ;
+	background-attachment: fixed;
+}
+main.blog{
+	width: 90%;
+	height: auto;
+	margin:0 5%;
+	float: left;
+	background: #fff;
+}
+main.blog .cover-blog{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	
+	background: #fff;
+	position: relative;
+	max-height: 300px;
+}
+.cover-blog .profile-circle{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    left: calc(50% - 135px);
+    bottom: -20px;
+    background: #fff;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.cover-blog img{
+	width: 100%;
+	height: auto;
+}
+main.blog .content{
+	width: 100%;
+	height: auto;
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 5px;
+	background: #fff;
+}
+.content .first-part{
+	width: 70%;
+	margin: 0;
+	float: left;
+	padding: 5px;
+	padding-bottom: 40px;
+}
+.first-part .title-blog{
+	padding: 2px;
+	display: block;
+}
+.first-part h2.title{
+	font-family: 'Apple Chancery', cursive;
+	text-align: center;
+	font-weight: 400;
+	font-size: 2.1rem;
+}
+.first-part .blog-post{
+	width: 90%;
+	margin: 10px 5%;
+	margin-bottom: 30px;
+	height: 330px;
+	position: relative;
+	overflow: hidden;
+}
+.blog-post .header{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	max-height: 200px;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+.header img{
+	width: 100%;
+	height: auto;
+	max-height: 240px;
+}
+.blog-post .date{
+	width: 20%;
+	position: absolute;
+	background: #fff;
+	height: 150px;
+	padding: 40px 0 0 20px;
+	left: 0;
+	bottom: 0;
+	float: left;
+}
+.blog-post a.postare{
+	text-decoration: none;
+	color: #111;
+}
+.date span{
+	color: gray;
+	font-style: oblique;
+	font-size: 17px;
+}
+.blog-post .blog-content{
+	width: 80%;
+	float: left;
+	position: absolute;
+	right: 0;
+	height: 200px;
+	bottom: 0;
+	z-index: 1;
+	background: #fff;
+}
+.blog-content a{
+	text-decoration: none;
+	transition: 0.5s ease;
+}
+.blog-content a:hover{
+	cursor: pointer;
+	color: #23527c;
+}
+a.postare:hover h2{
+	color: #23527c;
+}
+a.postare:hover p{
+	color: #111;
+}
+.blog-content h2{
+	font-size: 1.6rem;
+	font-style: italic;
+	font-weight: 500;
+	padding: 10px;
+	transition: 0.4s ease;
+	margin: 0;
+}
+.blog-content p{
+	text-indent: 15px;
+	line-height: 22px;
+	height: 100px;
+	font-size: 17.5px;
+}
+.content .second-part{
+	width: 30%;
+	float: left;
+	padding: 4px;
+	margin: 0;
+}
+.second-part h2{
+	font-weight: 300;
+	font-size: 1.4rem;
+	text-align: center;
+	font-family: 'Apple Chancery', cursive;
+}
+.second-part .box{
+	width: 90%;
+    margin: 15px 5%;
+    background: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    float: right;
+    border-radius: 5px;
+    height: auto;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    padding: 10px 0 15px 0;
+}
+.second-part .box a:hover{
+	cursor: pointer;
+}
+.second-part .box img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.second-part .box img.facebook{
+	margin-right: 20px;
+}
+.second-part aside{
+	width: 100%;
+	height: auto;
+	padding: 5px;
+}
+.box .center{
+	width: 100px;
+	margin: 0 auto;
+	height: auto;
+}
+.box ul{
+	list-style: none;
+	width: auto;
+	padding: 0;
+	margin: 5px 0 5px 10%;
+	float: left;
+	height: auto;
+}
+ul li .year-archive{
+	width: 100%;
+	height: auto;
+	font-size: 17.5px;
+	color: #23527c;
+}
+.year-archive i{
+	color: #000;
+	margin-right: 3px;
+	float: left;
+}
+.year-archive i.fa-angle-down{
+	display: block;
+}
+.year-archive i.fa-angle-right{
+	display: none;
+}
+.year-archive .year-content{
+	display: block;
+}
+.year-archive .month-archive{
+	width: auto;
+	height: auto;
+	margin-left: 20px;
+}
+.month-archive a{
+	display: none;
+	text-decoration: none;
+	margin-left: 20px;
+	color: #23527c;
+	font-size: 16.5px;
+}
+.month-archive a:hover{
+	text-decoration: underline;
+}
+.month-archive i.fa-angle-down{
+	display: none;
+}
+.month-archive i.fa-angle-right{
+	display: block;
+}
+.first-part .blogContent{
+	width: 100%;
+	height: auto;
+}
+.blogContent h1{
+    font-weight: 500;
+    font-size: 36px;
+    font-family: 'Apple Chancery', cursive;
+}
+.blogContent p.who{
+	text-indent: 15px;
+	font-size: 1.3rem;
+}
+.blogContent p.posted{
+    border-top: 1.5px solid #eee;
+    border-bottom: 1.5px solid #eee;
+    padding: 15px;
+}
+.blogContent p.content{
+	text-indent: 32px;
+	font-size: 1.37rem;
+	margin-top: 20px;
+	font-weight: 400;
+}
+.blogContent p.first{
+	padding-top: 10px;
+	border-top: 1.5px solid #eee;
+}
+.blogContent p.last{
+	padding-bottom: 10px;
+	border-bottom: 1.5px solid #eee;
+}
+.blogContent img{
+	width: 100%;
+	height: auto;
+}
+main.blog .mailto{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+}
+main.blog h2.intrebare{
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: #111;
+}
+main.blog button.send-mail{
+	width: auto;
+	padding: 3px 10px;
+	margin: 0 20px;
+	color: #fff;
+	background: #111;
+	border:1px solid #111;
+	border-radius: 3px;
+	font-size: 1.25rem;
+	height: 40px;
+}
+main.blog button.send-mail:hover{
+	cursor: pointer;
+}
+main.portofoliu{
+	float: left;
+	width: 100%;
+	height: auto;
+	background: #333030;
+	color: #fff;
+}
+main.portofoliu h2{
+	font-size: 1.90rem;
+	font-style: italic;
+	font-weight: 500;
+	text-shadow: black 0.03em 0.05em 0.03em;
+}
+main.portofoliu .inside .all{
+	width: 100%;
+	background: #111;
+	font-size: 14px;
+	height: auto;
+	padding: 4px;
+}
+main.portofoliu .inside .proiecte{
+	width: 98%;
+	height: auto;
+	margin: 0 auto;
+}
+main.portofoliu .proiecte .proiect{
+	width: 30%;
+	height: auto;
+	float: left;
+	padding-bottom: 30px;
+	padding-top: 5px;
+}
+main.portofoliu .lateral-proiect{
+	margin: 10px 0;
+}
+main.portofoliu .middle-proiect{
+	margin: 10px 5%;
+}
+main.portofoliu .proiect .image{
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+	transition: 0.35s ease;
+	opacity: 0.7;
+}
+main.portofoliu .proiect .image img{
+	width: 100%;
+	height: 180px;
+	transition: transform 1.5s ease;
+}
+main.portofoliu .image:hover{
+	opacity: 1.0;
+}
+main.portofoliu img:hover{
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25); 
+}
+main.portofoliu a{
+	text-decoration: none;
+}
+main.portofoliu p{
+	text-align: center;
+	margin: 0;
+	padding: 2.5px 0;
+	font-weight: 200;
+	font-size: 1.3rem;
+	color: #fff;
+	background: transparent;
+	transition: 0.7s ease;
+}
+main.portofoliu a:hover p{
+	color: #e27b1b;
+}
+@media screen and (min-width: 1200px){
+	main.cv .floater-right{
+	width: 100%;
+	max-width: 480px;
+	height: auto;
+	float: right;
+}
+main.cv .floater-left{
+	width: 100%;
+	max-width: 720px;
+	height: auto;
+	float: left;
+}
+}
+@media screen and (min-width: 1000px){
+	footer.mobile{
+		display: none;
+	}
+}
+@media screen and (max-width: 1000px){
+	footer.desktop{
+		display: none;
+	}
+	main.portofoliu .proiecte .proiect{
+		width: 45%;
+		margin: 0 2.5%;
+	}
+	main.portofoliu .proiect .image{
+		opacity: 1.0;
+	}
+}
+@media screen and (min-width: 740px){
+	.cover-blog{
+    	height: 300px;
+    }
+    main.blog .cover-blog{
+    	margin-top: 58px;
+    }
+}
+@media screen and (max-width: 740px){
+	main.cv .second-container{
+		width: 100%;
+	}
+	main.cv .first-container{
+		width: 100%;
+	}
+	.dispare{
+		display: none;
+	}
+	main.blog{
+		width: 100%;
+		margin: 0;
+		margin-top: 77px;
+	}
+	.content .first-part{
+	width: 100%;
+    }
+    .content .second-part{
+    	width: 100%;
+    }
+    .cover-blog .profile-circle{
+    	width: 120px;
+    	height: 120px;
+    	left: calc(50% - 62.5px);
+    	bottom: -13px;
+    }
+    .content .first-part{
+    	padding-bottom: 0;
+    }
+    .blog-content h2{
+    	font-size: 1.2rem;
+    	padding: 3px 0 0 3px;
+    }
+    .blog-content{
+    	height: 270px;
+    }
+    .date span{
+    	font-size: 7.5px;
+    }
+    .first-part .blog-post{
+    	height: 230px;
+    }
+    .blog-post .blog-content{
+    	height: 170px;
+    }
+    .blog-post .date{
+    	height: 150px;
+    }
+}
+@media screen and (min-width: 500px){
+	nav.mobile{
+		display: none;
+	}
+}
+@media screen and (max-width: 500px){
+	nav.stroke{
+		display: none;
+	}
+	header{
+		background: #fff;
+		padding: 0;
+		border-top: 4px solid #111;
+	}
+	main{
+		margin-top: 75px;
+	}
+	main.cover{
+		height: 340px;
+	}
+	main .descriere{
+		background-image: url("../images/background2.jpg");
+	}
+	.intrebare p{
+		font-size: 1.05rem;
+	}
+	.cover .cover-info{
+		width: 100%;
+		min-width: 100%;
+	}
+	.cover .image-cover{
+		display: none;
+	}
+	.motto p{
+		font-size: 1rem;
+		padding-bottom: 6px;
+	}
+	.motto h3{
+		padding-top: 6px;
+	}
+	.element .image{
+		width: 100%;
+	}
+	.element .intrebare{
+		width: 100%;
+	}
+	.servicii .element{
+		width: 80%;
+		margin: 10px 10%;
+	}
+	footer.desktop{
+		display: none;
+	}
+	.final{
+		font-size: 13.5px;
+	}
+	.blogContent p.content{
+		font-size: 1.2rem;
+	}
+	.blogContent h1{
+		font-size: 27px;
+	}
+	main.blog h2.intrebare{
+		font-size: 1.3rem;
+	}
+	main.blog button.send-mail{
+		font-size: 1.23rem;
+		margin: 0;
+	}
+	main.portofoliu .proiecte .proiect{
+		width: 90%;
+		margin: 0 5%;
+	}
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
